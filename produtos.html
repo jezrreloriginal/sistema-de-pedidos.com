@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <script src="js/produtos.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <div>
+        <label for="searchBar">Pesquisar Produto:</label>
+        <input type="text" id="searchBar" placeholder="Digite o nome do produto">
+        <ul id="searchResults"></ul>
+    </div>
+
+    <form id="produtoForm">
+        <input type="hidden" id="produtoId">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" required><br><br>
+
+        <label for="preco">Preço (R$):</label>
+        <input type="number" step="0.01" id="preco" required><br><br>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" required>
+            <option value="alimentos">Alimentos</option>
+            <option value="bebidas">Bebidas</option>
+        </select><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" placeholder="Descrição do Produto"></textarea><br><br>
+
+        <label for="imagem">Imagem do Produto:</label>
+        <input type="file" id="imagem"><br><br>
+
+        <button type="submit" id="adicionarProduto">Adicionar Produto</button>
+        <button type="button" id="editarProduto" style="display: none;">Salvar Alterações</button>
+        <button type="button" id="excluirProduto" style="display: none;">Excluir Produto</button>
+    </form>
+
+    <h2>Lista de Produtos</h2>
+    <ul id="produtoLista"></ul>
+</body>
+</html>

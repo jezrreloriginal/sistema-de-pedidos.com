@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos e Histórico</title>
+    <link rel="stylesheet" href="css/garcom.css">
+    <script src="js/garcom.js" defer></script>
+</head>
+<body>
+    <h1>Sistema de Pedidos</h1>
+
+    <button id="addPedidoBtn">Novo Pedido</button>
+    <button id="verHistoricoBtn">Ver Histórico</button>
+    <button id="consultarClientesBtn">Consultar Cliente</button>
+
+    <div id="pedidosContainer"></div>
+
+    <!-- Modal para novo pedido -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Novo Pedido</h2>
+            <input type="text" id="numeroPedido" placeholder="Número do Pedido">
+            <input type="text" id="clienteNome" placeholder="Nome do Cliente">
+            <input type="text" id="itemPedido" placeholder="Produto">
+            <input type="number" id="itemPreco" placeholder="Preço">
+            <button id="addProdutoBtn">Adicionar Produto</button>
+            <ul id="listaProdutos"></ul>
+            <div id="totalPedido">Total: R$0.00</div>
+            <button id="confirmarPedido">Confirmar Pedido</button>
+        </div>
+    </div>
+
+    <!-- Histórico de pedidos -->
+    <div id="historicoContainer" style="display: none;"></div>
+
+    <!-- Detalhes de um pedido específico (cliente) -->
+    <div id="clientesContainer" style="display: none;"></div>
+
+    <!-- Área de Notificação -->
+    <div id="notification" class="notification hidden"></div>
+</body>
+</html>

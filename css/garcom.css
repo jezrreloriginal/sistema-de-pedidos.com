@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+.pedido {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+#searchResults {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.result-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background-color: #f0f0f0;
+}
+
+#itensAdicionados {
+    list-style-type: none;
+    padding: 0;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #44c767; /* Cor verde para sucesso */
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    z-index: 1000;
+    transition: opacity 0.5s ease, top 0.5s ease;
+}
+
+.notification.error {
+    background-color: #e74c3c; /* Cor vermelha para erro */
+}
+
+.notification.hidden {
+    opacity: 0;
+    top: 10px;
+}
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.notification.error {
+    background-color: red;
+}
+
+.notification.hidden {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Other styles */
+.historico-pedido {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}

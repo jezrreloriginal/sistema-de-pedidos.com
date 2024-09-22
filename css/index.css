@@ -1,0 +1,94 @@
+/* index.css */
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff7c01d0;
+  }
+  
+  /* Estilo para o título */
+  .titulos {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .titulos h1 {
+    font-size: 36px;
+    color: #ff0202;
+  }
+  
+  .titulos h2 {
+    font-size: 24px;
+    color: #ff0000;
+    transition: 2s;
+  }
+  .titulos h2:hover{
+ 
+    color: #ffffff;
+ cursor:col-resize;
+  transition: 2s;
+  }
+  /* Estilo para as contas */
+  .contas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    transition: 1s;
+  }
+  
+  .contas div {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    background-color: #cccccf;
+    cursor: pointer;
+  }
+  
+  .contas div:hover {
+    background-color: #ddd;
+    
+  }
+  
+  /* Estilo para cada conta */
+  .gerente {
+    background-color: #ff9900;
+    color: #fff;
+  }
+  
+  .garcom {
+    background-color: #66cc00;
+    color: #fff;
+  }
+  
+  .caixa {
+    background-color: #0099cc;
+    color: #fff;
+  }
+  
+  .bar {
+    background-color: #ff66cc;
+    color: #fff;
+  }
+  
+  .cozinha {
+    background-color: #cc9900;
+    color: #fff;
+  }
+  
+  .cliente {
+    background-color: #66cccc;
+    color: #fff;
+  }
+  
+  .menu {
+    background-color: #ffcc00;
+    color: #fff;
+  }
